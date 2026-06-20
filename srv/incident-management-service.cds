@@ -22,3 +22,9 @@ service AdminService @(path: '/admin'){
     entity Incidents as projection on my.Incidents;
     entity Customers as projection on my.Customers;
 }
+
+/**
+ * enabling draft
+ */
+
+ annotate ProcessorService.Incidents with @odata.draft.enabled;

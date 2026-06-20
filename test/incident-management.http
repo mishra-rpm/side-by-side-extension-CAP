@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:4004
+
+###
+GET {{baseUrl}}/admin/$metadata
+
+###
+GET  {{baseUrl}}/processor/$metadata
+
+### admin. service
+GET {{baseUrl}}/admin/Customers
+
+###
+GET {{baseUrl}}/admin/Incidents?$expand=conversation
